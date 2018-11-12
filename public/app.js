@@ -1,7 +1,7 @@
 
 function something(){
     
-    let x = window.localStorage.getItem('nn');
+    var x = window.localStorage.getItem('nn');
 
     x = x * 1 + 1;
     
@@ -10,6 +10,11 @@ function something(){
     alert(x);
 }
 
-function add_to_card(id) {
-    alert("You added pizza with id: " + id);
+function add_to_cart(id){
+
+    var key = 'product_' + id;
+
+    var x = window.localStorage.getItem(key);
+    x = x * 1 + 1;
+    window.localStorage.setItem(key, x);
 }
