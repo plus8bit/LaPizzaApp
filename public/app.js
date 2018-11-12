@@ -10,3 +10,6 @@ function something(){
     alert(x);
 }
 
+function add_to_card(id) {
+    alert("You added pizza with id: " + id);
+}

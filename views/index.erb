@@ -21,10 +21,15 @@
         <div>
             Price: <%= p.price  %>
         </div>
+
+        <div>
+            <button class="btn btn-sm btn-success" onclick="add_to_card(<%= p.id %>)">Add to card</button>
+        </div>
     </div>
     <% end %>
 
 </div>
+<br>
 <br>
     <button class="btn btn-success" onclick="something()">Click me</button>
 
