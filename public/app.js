@@ -20,12 +20,19 @@ function add_to_cart(id){
 
     //show number of items in the cart
     update_orders();
+    update_button();
 }
 
 function update_orders() {
     var orders = get_orders();
     $('#orders_input').val(orders);
     
+}
+
+function update_button(){
+    var text = 'Cart (' + number_of_items() + ')';
+    $('#ordes_button').val(text);
+
 }
 
 function number_of_items() {
