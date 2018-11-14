@@ -7,7 +7,9 @@ require 'sinatra/activerecord'
 set :database, "sqlite3:lapizza.db"
 
 class Product < ActiveRecord::Base
-	 
+end
+
+class Order < ActiveRecord::Base
 end
 
 get '/' do
@@ -49,3 +51,4 @@ def parse_orders_input orders_input
 
 	return arr
 end
+
