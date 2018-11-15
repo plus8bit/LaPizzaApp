@@ -70,3 +70,12 @@ function get_orders() {
     return orders;
     
 }
+
+
+function cancel_order(){
+    
+    window.localStorage.clear();
+    update_orders();
+	update_button();
+    return false; 
+}
