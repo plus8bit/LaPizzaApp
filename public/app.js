@@ -75,7 +75,9 @@ function get_orders() {
 function cancel_order(){
     
     window.localStorage.clear();
+
     update_orders();
-	update_button();
+    update_button();
+
     return false; 
 }
